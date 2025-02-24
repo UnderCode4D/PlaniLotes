@@ -9,11 +9,11 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
-      sky: colors.sky, // Renombrado desde lightBlue
-      stone: colors.stone, // Renombrado desde warmGray
-      neutral: colors.neutral, // Renombrado desde trueGray
-      gray: colors.gray, // Renombrado desde coolGray
-      slate: colors.slate, // Renombrado desde blueGray
+      sky: colors.sky, 
+      stone: colors.stone, 
+      neutral: colors.neutral, 
+      gray: colors.gray,
+      slate: colors.slate, 
       red: colors.red,
       blue: colors.blue,
       green: colors.green,
@@ -78,7 +78,7 @@ module.exports = {
     },
   },
   plugins: [
-    require("@tailwindcss/forms"), // Esto corrige el error
+    require("@tailwindcss/forms"),
     plugin(function ({ addComponents, theme }) {
       const screens = theme("screens", {});
       addComponents([
